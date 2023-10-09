@@ -1,0 +1,312 @@
+:root{
+    --negro: #dc2020;
+
+    --font-family-titles: 'Raleway', sans-serif;
+    --font-family-text:"Montserrat", sans-serif;
+    --font-weight-title1:800;
+    --font-weight-title2:700;
+    --font-weight-text1:400;
+    --font-weight-text2:500;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.head-container{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/peaky-blinders-5093237_1920.jpg");
+    width: 100%;
+    height: 1082px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.nav-container{
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.7) 20%,transparent);
+    position: fixed;
+    z-index: 2;
+    /* background-color: black; */
+    /* display: flex; */
+}
+.nav-title{
+    color: #dc2020;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.nav-ul-container{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-li-text{
+    color: #fff;
+    font-size: 18px;
+    font-family: var(--font-family-text);
+    cursor: pointer;
+}
+
+.form-input{
+    border-style: none;
+    border-radius: 8px;
+    height: 35px;
+    width: 200px;
+    background-color: black;
+    border: 2px solid #fff;
+    color: #fff;
+    padding-left: 10px;
+    font-family: var(--font-family-text);
+}
+
+
+.header-information{
+    width: 640px;
+    height: 354px;
+    position: absolute;
+    bottom: 25%;
+    left: 100px;
+}
+
+.header-information-title{
+    font-size: 40px;
+    color: #fff;
+    font-family: var(--font-family-titles);
+}
+.header-information-description{
+    color: #fff;
+    font-size: 24px;
+    font-family: var(--font-family-text);
+}
+
+
+.header-information-button{
+    display: flex;
+}
+
+.header-information-btn1{
+    width: 172px;
+    height: 45px;
+    background-color: #E13C2F;
+    border-radius: 7px;
+    border-style: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: var(--font-weight-text2);
+    margin-right: 20px;
+    font-family: var(--font-family-text);
+}
+
+.header-information-btn2{
+    width: 127px;
+    height: 45px;
+    background-color: #333333;
+    border-radius: 7px;
+    border-style: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: var(--font-weight-text2);
+    font-family: var(--font-family-text);
+    margin-right: 20px;
+}
+
+.header-information-star{
+    display: flex;
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+}
+
+.header-information-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    font-weight: var(--font-weight-text1);
+}
+
+.header-information-icon-text{
+    margin-right: 10px;
+    font-family: var(--font-family-text);
+}
+
+.text-button{
+    background-color: #E13C2F;
+    padding: 3px;
+    border-radius: 8px;
+    font-family: var(--font-family-text);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+
+/* Sección Trending */
+
+.categories{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+
+}
+.categories2{
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.trending-preview-container{
+    width: 70%;
+    height: 100%;
+}
+
+.trending-preview-title-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending-preview-title{
+    font-family: var(--font-family-titles);
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+
+.trending-preview-button{
+    width: 110px;
+    height: 45px;
+    padding: 12px 16px 12px 16px;
+    background-color: #E13C2F;
+    color: #fff;
+    border-style: none;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: var(--font-family-text);
+}
+
+.trending-preview-container-movies{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+/* Estilo de la barra de desplazamiento para navegadores basados en WebKit (por ejemplo, Chrome y Safari) */
+
+  
+  .trending-preview-container-movies::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: red;
+    border-radius: 5px;
+  }
+  
+  /* Estilo de la barra de desplazamiento para navegadores basados en Firefox */
+  .trending-preview-container-movies {
+    scrollbar-width: thin;
+    scrollbar-color: red #262626;
+  }
+  
+  /* Estilo de la barra de desplazamiento para navegadores basados en Microsoft Edge */
+  .trending-preview-container-movies::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.trending-preview-container-movies-img-text{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 15px;
+}
+
+
+.trending-preview-container-movies-img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.trending-preview-container-movies-text{
+    color: #fff;
+    overflow-wrap: break-word;  
+    text-align: start;
+    font-size: 16px;
+}
+/* Termina sección */
+
+.categories-preview{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories-preview-buttons{
+    width: 70%;
+    height: auto;
+}
+.categories-preview-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.categories-preview-title{
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: var(--font-family-titles);
+
+}
+
+.categories-preview-button{
+    width: auto;
+    margin-top: 15px;
+    border-style: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: var(--font-family-text);
+    font-weight: var(--font-weight-title2);
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-family-titles);
+}

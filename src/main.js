@@ -1,3 +1,4 @@
+// API traer datos (img,title) de la pelicula de tendencia
 async function  getTrendingMoviesPreview() {
     const res= await fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=" + API_KEY);
     const data = await res.json();
@@ -32,4 +33,22 @@ async function  getTrendingMoviesPreview() {
     })
 }
 
+// Funcion para traer datos de las categori (Los generos de las peliculas)
+async function  getCategoriesPreview() {
+    const res= await fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=" + API_KEY);
+    const data = await res.json();
+
+    const categories = data.genres;
+    categories.forEach(category => {
+        const previewCategoriesContainer = //seleccionamos el id (es el de section) y la div que queremos agarrar por dentro
+            document.querySelector("#categoriesPreview .categories-preview-buttons");
+
+        const buttonCategory = document.createElement("button");
+        buttonCategory.classList.add("categories-preview-button");
+        buttonCategory.innerHTML = category.name;
+        previewCategoriesContainer.appendChild(buttonCategory);        
+    })
+}
+
 getTrendingMoviesPreview()
+getCategoriesPreview()
